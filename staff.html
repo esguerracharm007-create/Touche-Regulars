@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Touché Staff</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1E2B23">
+<link rel="icon" href="pugo-icon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&family=Karla:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<style>
+.shell.wide { max-width: 760px; }
+.tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.tabs button { min-height: 48px; border-radius: 12px; border: 1px solid var(--line); background: transparent; color: var(--muted); font-weight: 700; font-size: 15px; }
+.tabs button[aria-current="page"] { background: var(--panel); color: var(--text); border-color: var(--text); }
+#reader { width: 100%; max-width: 360px; margin: 0 auto; border-radius: 14px; overflow: hidden; background: var(--ground-deep); }
+.tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { color: var(--muted); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; }
+tr:last-child td { border-bottom: 0; }
+td button { min-height: 44px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line-soft); background: transparent; color: var(--text); font-weight: 700; }
+.pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 10px; }
+</style>
+</head>
+<body>
+<div class="shell wide">
+  <main id="app" aria-live="polite">
+    <p class="muted">Opening the staff door…</p>
+  </main>
+</div>
+<script src="config.js"></script>
+<script src="content.js"></script>
+<script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+<script src="staff.js"></script>
+</body>
+</html>

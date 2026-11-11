@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Touché Regulars</title>
+<meta name="description" content="The members' corner of Touché Cafe: your trail journal, first sips, and what's happening in the woods this week.">
+<meta name="theme-color" content="#1E2B23">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="pugo-icon.png" type="image/png">
+<link rel="apple-touch-icon" href="pugo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&family=Karla:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+  <main id="app" aria-live="polite">
+    <p class="muted">Lighting the fire…</p>
+  </main>
+  <nav id="nav" aria-label="Member site sections" hidden>
+    <button type="button" data-act="tab" data-tab="home">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 L12 3 L21 11"/><path d="M5 10 V21 H19 V10"/></svg>
+      <span>Home</span>
+    </button>
+    <button type="button" data-act="tab" data-tab="journal">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3 H19 V21 H5 Z"/><path d="M9 8 H15"/><path d="M9 12 H15"/></svg>
+      <span>Journal</span>
+    </button>
+    <button type="button" data-act="tab" data-tab="sip">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8 H17 V14 A5 5 0 0 1 12 19 H9 A5 5 0 0 1 4 14 Z"/><path d="M17 10 H19 A2 2 0 0 1 19 14 H17"/></svg>
+      <span>First Sip</span>
+    </button>
+    <button type="button" data-act="tab" data-tab="card">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6 H21 V18 H3 Z"/><path d="M3 10 H21"/></svg>
+      <span>Card</span>
+    </button>
+  </nav>
+</div>
+<script src="config.js"></script>
+<script src="content.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

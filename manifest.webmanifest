@@ -1,0 +1,12 @@
+{
+  "name": "Touché Regulars",
+  "short_name": "Touché",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1E2B23",
+  "theme_color": "#1E2B23",
+  "icons": [
+    { "src": "pugo-icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
