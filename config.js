@@ -8,6 +8,6 @@
    any device.
    --------------------------------------------------------------- */
 window.TOUCHE_CONFIG = {
-  supabaseUrl: "",
+  supabaseUrl: "https://cvkgxfqmlcpqnpftwzcl.supabase.co",
   supabaseAnonKey: ""
 };
